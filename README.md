@@ -1,1 +1,1 @@
-The 2 branches contains file that works separetely. Model_functions its used to see the results and to simulate different cases
+Model_functions its used to see the results and to simulate different cases while signal_analysis_simultion its used to find the best combination(tuning the parameter), for the impedance controller. The data given inModel_functions, were created by me analyzing this two ranges K=6000:10:7000 and B=1:10:1000, after that i used all the functions and i did the mean of all the results.
