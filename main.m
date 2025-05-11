@@ -4,10 +4,10 @@ clear all
 close all
 clc
 
-H_K=load('H_K') ;% Load the best costant gain combination
+load K_B.mat % Load the best costant gain combination
 
-Kt=load('Kt'); % Load the best variable impedance(K(t))
-Bt=load('Bt'); % Load the variable impedance(B(t))
+load Kt % Load the best variable impedance(K(t))
+load Bt % Load the variable impedance(B(t))
 
 
 % Patient caratheristics
@@ -56,6 +56,6 @@ qkdotdot=timeseries(qk1dotdot',t);
 Kt=timeseries(Kt,t);
 Bt=timeseries(Bt,t);
 
-Khip=K_B.K;Bhip=K_B.B;Kknee=K_B.B;Bknee=K_B;
+Khip=sos.K;Bhip=sos.B;Kknee=sos.K;Bknee=sos.B;
 
 
