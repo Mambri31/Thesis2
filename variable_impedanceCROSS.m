@@ -4,7 +4,7 @@
 function [Kt,Bt]=variable_impedanceCROSS(qh,qk,rangeK,rangeB,t,cycle_duration)
 
     % Percentage of gait cycle phases
-    perc = [0 2 12 31 50 62 75 87 100]*0.01;
+    perc = [0 10 30 50 60 73 87 100]*0.01;
     n_phase=length(perc);
 
     sample=length(t); % fixed number of points
